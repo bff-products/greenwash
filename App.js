@@ -5,7 +5,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{color: 'white', fontWeight: 'bold'}}>*** GREEN WASH ***</Text>
+        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 30}}>GREEN WASH</Text>
       </View>
     );
   }
@@ -14,7 +14,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0f0',
+    backgroundColor: '#007C3E',
     alignItems: 'center',
     justifyContent: 'center',
   },
