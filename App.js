@@ -26,12 +26,6 @@ export default class App extends Component<{}> {
         <Text style={styles.welcome}>
           GREEN WASH
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
       </View>
     );
   }
@@ -42,12 +36,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#007C3E',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: '#fff',
+    fontWeight: 'bold'
   },
   instructions: {
     textAlign: 'center',
