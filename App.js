@@ -1,13 +1,17 @@
 import React, { Component, Easing } from 'react';
 import SplashScreen from './screens/splash.js';
 import IntroScreen from './screens/intro.js';
+import LoginScreen from './screens/login.js';
+import RegisterScreen from './screens/register.js';
 
 import { StackNavigator } from 'react-navigation';
 
-const SimpleApp = StackNavigator(
+const GreenWashApp = StackNavigator(
   {
     SplashScreen: { screen: SplashScreen },
-    IntroScreen: { screen: IntroScreen }
+    IntroScreen: { screen: IntroScreen },
+    LoginScreen: { screen: LoginScreen },
+    RegisterScreen: { screen:RegisterScreen }
   },
   {
     headerMode: 'none',
@@ -16,6 +20,7 @@ const SimpleApp = StackNavigator(
 
 export default class App extends Component<{}> {
   render() {
-    return <SimpleApp />;
+
+    return <GreenWashApp />;
   }
 };

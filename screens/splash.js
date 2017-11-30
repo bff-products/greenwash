@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {Image, ImageBackground, Button} from 'react-native';
 import Screen from '../components/screen.js';
-import { StackNavigator } from 'react-navigation';
 
 export default class SplashScreen extends Component<{}> {
-  
+  constructor(props){
+    super(props);
+  }
+
   render() {
     const { navigate } = this.props.navigation;
     function goToIntro(){
