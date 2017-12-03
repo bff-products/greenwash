@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {View, ImageBackground, Text, Alert, Dimensions} from 'react-native';
 import Screen from '../components/screen.js';
+import ScreenComponent from '../components/screen-component.js';
 import Button from '../components/button.js';
 
-export default class IntroScreen extends Component<{}> {
+export default class IntroScreen extends ScreenComponent<{}> {
     
   render() {
     const { navigate } = this.props.navigation;
@@ -17,8 +18,8 @@ export default class IntroScreen extends Component<{}> {
 
     return (
         
-        <Screen>
-            <View style={{flex: 1, flexDirection: 'column'}}>        
+        <Screen navigation={this.props.navigation}>
+            <View style={{flex: 1, flexDirection: (this.state.orientation === 'PORTRAIT'? 'column' : 'row')}}>        
                 <ImageBackground 
                     source={require('../images/intro.jpg')}
                     style={{

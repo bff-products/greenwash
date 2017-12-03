@@ -10,10 +10,10 @@ export default class Button extends Component<{}>{
         <Touchable
             onPress={this.props.onPress}>
             <View style={{
-                flex: 1,
                 justifyContent: 'center',
                 backgroundColor: this.props.backgroundColor,
                 height: 50,
+                flex: 1,
                 alignItems: 'center',
                 borderRadius: 4,
                 borderColor: this.props.borderColor,
@@ -23,7 +23,8 @@ export default class Button extends Component<{}>{
                 >
             <Text
                 style={{
-                    color: this.props.fontColor
+                    color: this.props.fontColor,
+                    fontSize: 16
                 }}>
                 {this.props.title}</Text>
             </View>

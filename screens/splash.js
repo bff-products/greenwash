@@ -16,7 +16,7 @@ export default class SplashScreen extends Component<{}> {
     setTimeout(() => {goToIntro()}, 1000);
 
     return (
-        <Screen>        
+        <Screen navigation={this.props.navigation}>        
             <ImageBackground 
                     source={require('../images/splash-screen-background.png')}
                     style={{
