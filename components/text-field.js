@@ -5,7 +5,8 @@ import {View, Text, TextInput} from 'react-native';
 export default class TextField extends Component<{}>{
     render() {
         return (
-        <View style={{marginTop: 15}}>
+        <View style={{marginTop: 5, flex: 1 }}
+            >
             <Text style={{
                 color: this.props.titleFontColor,
                 fontSize: 16}}>{this.props.title}</Text>
