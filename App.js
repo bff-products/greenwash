@@ -5,17 +5,21 @@ import LoginScreen from './screens/login.js';
 import ForgotPasswordScreen from './screens/forgot-password.js';
 import VerifyMobileScreen from './screens/verify-mobile.js';
 import RegisterScreen from './screens/register.js';
+import HomeScreen from './screens/home.js';
 
 import { StackNavigator } from 'react-navigation';
 
 const GreenWashApp = StackNavigator(
   {
+    /*
     SplashScreen: { screen: SplashScreen },
     IntroScreen: { screen: IntroScreen },
     LoginScreen: { screen: LoginScreen },
     RegisterScreen: { screen:RegisterScreen },
     ForgotPasswordScreen: { screen:ForgotPasswordScreen },
-    VerifyMobileScreen: { screen:VerifyMobileScreen }
+    VerifyMobileScreen: { screen:VerifyMobileScreen },
+    */
+    HomeScreen: { screen:HomeScreen }
   },
   {
     headerMode: 'none',
