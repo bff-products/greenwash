@@ -11,14 +11,12 @@ import { StackNavigator } from 'react-navigation';
 
 const GreenWashApp = StackNavigator(
   {
-    /*
     SplashScreen: { screen: SplashScreen },
     IntroScreen: { screen: IntroScreen },
     LoginScreen: { screen: LoginScreen },
     RegisterScreen: { screen:RegisterScreen },
     ForgotPasswordScreen: { screen:ForgotPasswordScreen },
     VerifyMobileScreen: { screen:VerifyMobileScreen },
-    */
     HomeScreen: { screen:HomeScreen }
   },
   {

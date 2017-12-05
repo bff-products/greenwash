@@ -21,7 +21,7 @@ export default class LoginScreen extends Component<{}> {
     }
 
     function onLoginPress(){
-        Alert.alert("onLoginPress");
+        navigate("HomeScreen");
     }
 
     function onForgotPasswordPress(){
@@ -66,13 +66,25 @@ export default class LoginScreen extends Component<{}> {
                     <Text>OR</Text>
                 </View>
                 <View style={{
-                        padding: 15
+                        paddingLeft: 15,
+                        paddingRight: 15,
+                        flexDirection: 'row',
+                        alignSelf: "stretch",
+                        justifyContent: "space-around"
                     }}>
                     <TextField 
                         title="PHONE NUMBER OR EMAIL"
                         titleFontColor="#9a9fa2"
                         textFontColor="#000000"
                         />
+                </View>
+                <View style={{
+                        paddingLeft: 15,
+                        paddingRight: 15,
+                        flexDirection: 'row',
+                        alignSelf: "stretch",
+                        justifyContent: "space-around"
+                    }}>
                     <PasswordField 
                         title="PASSWORD"
                         titleFontColor="#9a9fa2"

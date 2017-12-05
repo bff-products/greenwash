@@ -9,8 +9,9 @@ export default class ForgotPasswordScreen extends Component<{}> {
   
   render() {
 
+    const { navigate } = this.props.navigation;
     function onSubmitPress(){
-        Alert.alert("onSubmitPress");
+        navigate("HomeScreen");
     }
 
     function onChangeNumberPress(){
